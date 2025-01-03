@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFCC00, #FF007F, #00CFFF, #AA00FF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.artist-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.artist-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.artist-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.artist-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.artist-card .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.artist-card .stats div {
+    text-align: center;
+}
+
+.artist-card .stats div span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.artist-card .actions button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.artist-card .actions .follow {
+    background: #FF007F;
+}
+
+.artist-card .actions .play {
+    background: #00CFFF;
+}
+
+.footer-bar1 {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    overflow-x: auto;
+    left: 0;
+    font-size: 50px;
+    text-decoration: none; 
+    color: white;
+    
+}
+
+.footer-bar2 {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    overflow-x: auto;
+    right: 0;
+    font-size: 50px;
+    text-decoration: none; 
+    color: white;
+    
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

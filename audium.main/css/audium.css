@@ -1,0 +1,192 @@
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFCC00, #FF007F, #00CFFF, #AA00FF);
+            background-size: 400% 400%; /* Растягивает фон на весь экран */
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            height: 100vh; /* Заставляет body занимать всю высоту экрана */
+            margin: 0; /* Убирает отступы */
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        } */
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        header .footer-bar1 {
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+        }
+
+        header .footer-bar1 {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center; /* Вертикальное выравнивание */
+            justify-content: center; /* Горизонтальное выравнивание */
+            overflow-x: auto;
+            left: 0;
+            font-size: 50px;
+            text-decoration: none; 
+            color: white;
+            
+            
+        }
+
+        header .footer-bar2 {
+            position: fixed;
+            display: flex;
+            bottom: 0;
+            width: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center; /* Вертикальное выравнивание */
+            justify-content: center; /* Горизонтальное выравнивание */
+            overflow-x: auto;
+            right: 0;
+            font-size: 50px;
+            text-decoration: none; 
+            color: white;
+            
+        }
+
+        /* .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .hero .actions button {
+            padding: 15px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero .actions .listen {
+            background: #FFCC00;
+        }
+
+        .hero .actions .playlist {
+            background: #AA00FF;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .carousel .item {
+            min-width: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .carousel .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .player {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .player .track-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .player .track-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .player .controls button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .player .progress {
+            flex-grow: 1;
+            height: 5px;
+            background: #555;
+            border-radius: 3px;
+            margin: 0 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .player .progress .progress-bar {
+            width: 50%;
+            height: 100%;
+            background: #FF007F;
+            position: absolute;
+        } */
+
+        
